@@ -5,7 +5,7 @@ from odoo.exceptions import ValidationError
 class TodoTask(models.Model):
     _name = 'todo.task'
     _inherit = ['mail.thread', 'mail.activity.mixin']
-    _description = 'To Do Task'
+    _description = 'To Do Task to'
 
     active = fields.Boolean(default=True)
     ref = fields.Char(default='new', readonly=True)
